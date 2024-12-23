@@ -44,14 +44,14 @@ i {
 
 .hero {
   position: relative;
-  height: 900px; /* Adjust height as needed */
+  height: 900px; 
   overflow: hidden;
 }
 
 .hero video {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Ensures the image covers the container */
+  object-fit: cover; 
 }
 
 .hero-content {
@@ -64,95 +64,92 @@ i {
 }
 
 .hero-content h1 {
-  font-size: 4em; /* Adjust size as needed */
+  font-size: 4em; 
   margin: 0;
 }
 
 .hero-content p {
-  font-size: 1.6em; /* Adjust size as needed */
-  margin: 20px 0; /* Add margin to separate text from button */
+  font-size: 1.6em;
+  margin: 20px 0; 
 }
 
 .cta-button {
-  background-color: #04AA6D; /* Button color */
+  background-color: #04AA6D;
   color: white;
   padding: 10px 20px;
   text-decoration: none;
   border-radius: 5px;
   transition: background-color 0.3s;
-  display: inline-block; /* Ensure the button is treated as a block element */
-  margin-top: 20px; /* Add margin to separate button from text */
+  display: inline-block; 
+  margin-top: 20px; 
 }
 
 .cta-button:hover {
-  background-color: #111; /* Darker shade on hover */
+  background-color: #111; 
 }
-/* Existing CSS... */
 
 .updates-news {
-  background-color: #222; /* Background color for the updates section */
-  color: white; /* Text color */
-  padding: 20px; /* Padding around the section */
-  text-align: center; /* Center align text */
+  background-color: #222; 
+  color: white;
+  padding: 20px; 
+  text-align: center; 
 }
 
 .updates-news h2 {
-  font-size: 2.5em; /* Size of the section title */
-  margin-bottom: 20px; /* Space below the title */
+  font-size: 2.5em; 
+  margin-bottom: 20px; 
 }
 
 .update-item {
-  background-color: #333; /* Background color for each update item */
-  margin: 10px 0; /* Space between update items */
-  padding: 15px; /* Padding inside each update item */
-  border-radius: 5px; /* Rounded corners */
+  background-color: #333;
+  margin: 10px 0; 
+  padding: 15px; 
+  border-radius: 5px; 
 }
 
 .update-item h3 {
-  font-size: 1.8em; /* Size of the update title */
-  margin-bottom: 10px; /* Space below the update title */
+  font-size: 1.8em; 
+  margin-bottom: 10px; 
 }
 
 .update-item p {
-  font-size: 1.2em; /* Size of the update details */
+  font-size: 1.2em; 
 }
 
-/* Existing CSS... */
-
 .showcase {
-  background-color: #222; /* Background color for the showcase section */
-  color: white; /* Text color */
-  padding: 20px; /* Padding around the section */
-  text-align: center; /* Center align text */
+  background-color: #222; 
+  color: white; 
+  padding: 20px; 
+  text-align: center; 
 }
 
 .showcase h2 {
-  font-size: 2.5em; /* Size of the section title */
-  margin-bottom: 20px; /* Space below the title */
+  font-size: 2.5em; 
+  margin-bottom: 20px; 
 }
 
 .showcase-container {
-  display: flex; /* Use flexbox for layout */
-  justify-content: space-around; /* Space items evenly */
-  flex-wrap: wrap; /* Allow items to wrap to the next line */
+  display: flex; 
+  justify-content: space-around; 
+  flex-wrap: wrap; 
 }
 
 .showcase-item {
-  background-color: #333; /* Background color for each showcase item */
-  margin: 10px; /* Space between showcase items */
-  padding: 15px; /* Padding inside each showcase item */
-  border-radius: 5px; /* Rounded corners */
-  width: 30%; /* Set width for each item */
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); /* Add shadow for depth */
+  background-color: #333; 
+  margin: 10px;
+  padding: 15px; 
+  border-radius: 5px; 
+  width: 30%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); 
 }
 
 .showcase-item img {
-  width: 100%; /* Make image responsive */
-  height: auto; /* Maintain aspect ratio */
-  border-radius: 5px; /* Rounded corners for images */
+  width: 100%; 
+  height: auto; 
+  border-radius: 5px; 
 }
 
 .showcase-item h3 {
-  font-size: 1.5em; /* Size of the tutorial title */
-  margin-top: 10px; /* Space above the title */
+  font-size: 1.5em; 
+  margin-top: 10px; 
 }
