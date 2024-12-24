@@ -1,102 +1,79 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-    <title>Project</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login & Registration</title>
     <link rel="stylesheet" href="login.css">
     <script src="https://kit.fontawesome.com/93b6beb725.js" crossorigin="anonymous"></script>
-</head>
-
-<body>
-    <div class="container">
-    <div class="login-form active">
-        <span class="icon-close">
-            <i class="fa-solid fa-xmark"></i>
-        </span>
-        <div class="form-box login">
-            <h2>Login</h2>
-            <form action="#" class="login-form">
-                <div class="input-box">
-                    <span class="icon">
-                        <i class="fa-solid fa-envelope"></i>
-                    </span>
-                    <input type="email" required placeholder=" ">
-                    <label>Email</label>
-                </div>
-                <div class="input-box">
-                    <span class="icon">
-                        <i class="fa-solid fa-lock"></i>
-                    </span>
-                    <input type="password" required placeholder=" ">
-                    <label>Password</label>
-                </div>
-                <div class="remember-forgot">
-                    <label><input type="checkbox"> Remember me</label>
-                    <a href="#">Forgot Password?</a>
-                </div>
-                <button type="submit" class="btn">Login</button>
-                <div class="login-register">
-                    <p class="register-link">Don't have an account? <a href="#" class="openRegister">Register now</a></p>
-                </div>
-            </form>
-        </div>
-    </div>
-</div>
-    <div class="container">
-    <div class="registration-form">
-        <span class="icon-close">
-            <i class="fa-solid fa-xmark"></i>
-        </span>
-        <div class="form-box register">
-            <h2>Register</h2>
-            <form action="#" class="register-form">
-                    <div class="input-box">
-                        <span class="icon">
-                            <i class="fa-solid fa-user"></i>
-                        </span>
-                    <input type="text" required placeholder=" ">
-                    <label>User</label>
-                    </div>
-                    <div class="input-box">
-                        <span class="icon">
-                            <i class="fa-solid fa-envelope"></i>
-                        </span>
-                    <input type="email" required placeholder=" ">
-                    <label>Email</label>
-                    </div>
-                <div class="input-box">
-                    <span class="icon">
-                        <i class="fa-solid fa-lock"></i>
-                    </span>
-                    <input type="password" required placeholder=" ">
-                    <label>Password</label>
-                </div>
-                <button type="submit" class="btn">Register</button>
-                <div class="login-register">
-                    <p>Already have an account?<a href="#" class="openRegister"> Sign in</a></p>
-                </div>
-            </form>
-        </div>
-    </div>
-</div>
-</div>
-<div class="container">
-<div class="welcome-back">
-    <div class="test">
-    <h1>Welcome back</h1>
-</div>
-<div class="test">
-    <p>Dont have an account?</p>
-</div>
-<div class="test">
-    <button type="submit" class="btn">Sign up</button>
-</div>
-</div>
-</div>
-
-
     <script src="login.js"></script>
-</body>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo"><a href="#">Adventurine</a></div>
+        <ul class="nav-links">
+            <li><a href="/frontend/homepage/homepage.html">Home</a></li>
+            <li><a href="/frontend/adventurespage/adventures.html">Adventures</a></li>
+            <li><a href="/frontend/how2playpage/howtoplay.html">How to play</a></li>
+            <li><a href="/frontend/updatespage/updates.html">Updates</a></li>
+            <li><a class="active" href="login.html">Sign up</a></li>
+        </ul>
+    </nav>
 
+    <!-- Login & Registration -->
+    <div class="container">
+        <div class="form-container">
+            <!-- Login Form -->
+            <div class="form-box login active">
+                <h2>Login</h2>
+                <form>
+                    <div class="input-box">
+                        <span class="icon"><i class="fa-solid fa-envelope"></i></span>
+                        <input type="email" required>
+                        <label>Email</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon"><i class="fa-solid fa-lock"></i></span>
+                        <input type="password" required>
+                        <label>Password</label>
+                    </div>
+                    <div class="remember-forgot">
+                        <label><input type="checkbox"> Remember me</label>
+                        <a style="float: right;" href="#">Forgot Password?</a>
+                    </div>
+                    <button type="submit" class="btn">Login</button>
+                    <div class="login-register">
+                        <p>Don't have an account? <a href="#" class="toggle-register">Register now</a></p>
+                    </div>
+                </form>
+            </div>
+
+            <!-- Registration Form -->
+            <div class="form-box register">
+                <h2>Register</h2>
+                <form>
+                    <div class="input-box">
+                        <span class="icon"><i class="fa-solid fa-user"></i></span>
+                        <input type="text" required>
+                        <label>Username</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon"><i class="fa-solid fa-envelope"></i></span>
+                        <input type="email" required>
+                        <label>Email</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon"><i class="fa-solid fa-lock"></i></span>
+                        <input type="password" required>
+                        <label>Password</label>
+                    </div>
+                    <button type="submit" class="btn">Register</button>
+                    <div class="login-register">
+                        <p>Already have an account? <a href="#" class="toggle-login">Sign in</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
 </html>

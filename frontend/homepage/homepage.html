@@ -7,28 +7,30 @@
     <link rel="stylesheet" href="homepage.css">
     <title>Home</title>
 </head>
-<body>
-    <ul>
-        <li style="float:left"><i class="fa-solid fa-person-running"></i></li>
-        <li style="float:right"><a href="#">Sign Up</a></li> <!--should be going to sign up page /in making/ -->
-        <li><a href="/rulespage/rulespage.html">Rules</a></li> <!--should be going to rules page /in making/ -->
-        <li><a href="/updatespage/updates.html">Updates</a></li> <!--should be going to updates page /in making/ -->
-        <li><a href="/adventurespage/adventures.html">Adventures</a></li> <!--should be going to adventures page /in making/ -->
-        <li><a class="active" href="homepage.html">Home</a></li>
-    </ul>
+ <body>
+    <nav class="navbar">
+        <div class="logo"><a href="#">Adventurine</a></div>
+        <ul class="nav-links">
+            <li><a class="active" href="homepage.html">Home</a></li>
+            <li><a href="/frontend/adventurespage/adventures.html">Adventures</a></li>
+            <li><a href="/frontend/how2playpage/howtoplay.html">How to play</a></li>
+            <li><a href="/frontend/updatespage/updates.html">Updates</a></li>
+            <li><a href="/frontend/loginpage/login.html">Sign up</a></li>
+        </ul>
+    </nav>
 
     <div class="hero">
         <video src="/imgs/videoplayback.mp4" muted loop autoplay></video>
         <div class="hero-content">
             <h1>Welcome to Our Adventure</h1>
             <p>Join us for exciting updates and adventures!</p>
-            <a href="#join" class="cta-button">Join Now</a> <!--should be going to sign up page /in making/ -->
+            <a href="/frontend/loginpage/login.html" class="cta-button">Join Now</a> <!-- /in making/ -->
         </div>
     </div>
 
     <div class="updates-news">
         <h2>Latest Updates and News</h2>
-        <a href="#join" class="cta-button">Check them out!</a> <!--should be going to updates page /in making/ -->
+        <a href="/frontend/updatespage/updates.html" class="cta-button">Check them out!</a> <!-- /in making/ -->
         <div class="update-item">
             <h3>Update Title 1</h3>
             <p>Details about the first update. This is where you can provide more information.</p>
@@ -60,5 +62,57 @@
             </div>
         </div>
     </div>
+
+    <div class="adventure-showcase">
+        <h2>Adventure Highlights</h2>
+        <div class="adventure-container">
+            <div class="adventure-item">
+                <img src="/imgs/img1.jpg" alt="Adventure 1">
+            </div>
+            <div class="adventure-item">
+                <video controls>
+                    <source src="/imgs/videoplayback.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="adventure-item">
+                <img src="/imgs/img2.jpg" alt="Adventure 2">
+            </div>
+            <div class="adventure-item">
+                <video controls>
+                    <source src="/imgs/videoplayback.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="adventure-item">
+                <video controls>
+                    <source src="/imgs/videoplayback.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="adventure-item">
+                <img src="/imgs/img2.jpg" alt="Adventure 2">
+            </div>
+            <div class="adventure-item">
+                <video controls>
+                    <source src="/imgs/videoplayback.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="adventure-item">
+                <video controls>
+                    <source src="/imgs/videoplayback.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="adventure-item">
+                <video controls>
+                    <source src="/imgs/videoplayback.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="adventure-item">
+                <video controls>
+                    <source src="/imgs/videoplayback.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+        <a href="/frontend/adventurespage/adventures.html" class="view-all-button">View All Adventures</a>
+    </div>
+    
 </body>
 </html>
