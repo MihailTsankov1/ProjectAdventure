@@ -1,51 +1,65 @@
 body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: url('/imgs/img4.png') no-repeat center center/cover;
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
-    background: url('/imgs/img4.png') no-repeat center center/cover; /* temp img */
-    margin: 0;
-    font-family: 'Poppins', sans-serif;
+    height: 100vh;
+    flex-direction: column; 
+    overflow-x: hidden; 
 }
 
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: rgba(51, 51, 51, 0.9);
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(32, 32, 32, 0.7);
+    backdrop-filter: blur(10px);
+    padding: 1rem 2rem;
+    color: white;
     position: fixed;
     top: 0;
+    left: 0;
     width: 100%;
     z-index: 1000;
+    box-sizing: border-box; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
-ul li {
-    float: left;
-}
-
-ul li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
+.navbar .logo a {
+    font-size: 1.5rem;
+    font-weight: bold;
     text-decoration: none;
-    font-family: 'Poppins', sans-serif;
-    font-size: 16px;
+    color: #fff;
 }
 
-ul li a:hover {
-    background-color: rgba(255, 255, 255, 0.2);
+.nav-links {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
-ul li .active {
-    background-color: #4CAF50;
+.nav-links li {
+    margin: 0 1rem;
 }
 
-ul li i {
+.nav-links a {
+    text-decoration: none;
     color: white;
-    font-size: 18px;
-    padding: 14px 16px;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #04AA6D;
+}
+
+.nav-links a.active {
+    color: #04AA6D;
+    font-weight: bold;
+    border-bottom: 2px solid #04AA6D;
+    padding-bottom: 5px;
 }
 
 .container {
@@ -55,6 +69,7 @@ ul li i {
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
     overflow: hidden;
+    margin-top: 60px;
 }
 
 .form-container {
@@ -90,10 +105,11 @@ ul li i {
     flex: 1;
     border: none;
     outline: none;
-    font-size: 14px;
+    font-size: 16px;
     color: #333;
-    padding: 5px 10px;
+    padding: 10px;
     background: transparent;
+    z-index: 2;
 }
 
 .input-box label {
@@ -101,9 +117,19 @@ ul li i {
     top: 50%;
     left: 50px;
     transform: translateY(-50%);
-    font-size: 14px;
+    font-size: 16px;
     color: #999;
-    pointer-events: none;   
+    pointer-events: none;
+    transition: all 0.3s ease;
+    z-index: 1;
+}
+
+.input-box input:focus + label,
+.input-box input:not(:placeholder-shown) + label {
+    top: 0;
+    left: 10px;
+    font-size: 12px;
+    color: #555;
 }
 
 
