@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How to Play</title>
+    <link rel="stylesheet" href="howtoplay.css">
+    <script src="https://kit.fontawesome.com/93b6beb725.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo"><a href="#">Adventurine</a></div>
+        <ul class="nav-links">
+            <li><a href="/frontend/homepage/homepage.html">Home</a></li>
+            <li><a href="/frontend/adventurespage/adventures.html">Adventures</a></li>
+            <li><a class="active" href="howtoplay.html">How to Play</a></li>
+            <li><a href="/frontend/updatespage/updates.html">Updates</a></li>
+            <li><a href="/frontend/loginpage/login.html">Sign up</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <video autoplay muted loop class="hero-video">
+            <source src="/imgs/videoplayback.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="hero-overlay">
+            <h1>How to Play Adventurine</h1>
+            <p>Embark on thrilling adventures with ease. Let’s get started!</p>
+            <i class="fa-solid fa-arrow-down"></i>
+        </div>
+    </section>
+
+    <!-- Rules Section -->
+    <section class="rules">
+        <h2>Game Rules</h2>
+        <div class="rules-content">
+            <ul>
+                <li>Stay Safe:
+                Always prioritize safety when embarking on an adventure. Avoid restricted areas, unsafe zones, or private property. If the location seems unsafe, you may skip it.</li>
+                <li>Respect Nature and Communities:
+                Leave no trace during your adventure. Take care of the environment, respect wildlife, and be courteous to local communities.</li> 
+                <li>Complete the Challenge:
+                To earn points, ensure you document your visit to the generated location by filming your adventure or writing a detailed blog post.</li> 
+                <li>Be Creative:
+                Add a personal touch to your submissions—creative storytelling or unique filming styles are encouraged!</li> 
+                <li>Follow the Law:
+                All activities must comply with local laws and regulations. Any illegal activities will result in disqualification.</li>
+                <li>No Cheating:
+                Submitting fake videos or content to gain points will result in immediate suspension of your account.
+                <li> Respect Others:
+                Be kind and respectful to other participants and people you encounter during your adventure.</li> 
+                <li>Have Fun:
+                Remember, the goal is to explore, discover, and enjoy the journey!</li> 
+            </ul>
+        </div>
+    </section>
+    <section class="how-to-play">
+        <h2>How to Get Started</h2>
+        <div class="steps">
+            <div class="step">
+                <img src="#" alt="Step 2">
+                <h3>Step 1: Sign Up</h3>
+                <p>Create an account to start your adventure journey. It's quick and easy!</p>
+                <button class="signup-button" onclick="window.location.href='/frontend/loginpage/login.html';">Sign Up</button>
+            </div>            
+            <div class="step">
+                <img src="#" alt="Choose Radius">
+                <h3>Step 2: Choose a Radius</h3>
+                <p>Set the distance you're comfortable traveling to explore new locations.</p>
+            </div>
+            <div class="step">
+                <img src="#" alt="Start Adventure">
+                <h3>Step 3: Start Your Adventure</h3>
+                <p>Receive a random location and head out to explore, capture, and upload your experiences!</p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
