@@ -7,7 +7,11 @@ body {
     line-height: 1.6;
     color: #333;
 }
-
+::-webkit-scrollbar {
+    display: none;
+    -ms-overflow-style: none;
+    scrollbar-width: none; 
+  }
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -121,11 +125,11 @@ body {
 }
 
 .rules-content ul {
-    list-style: none;
+    list-style: decimal;
     padding: 10px;
     font-size: 3rem;
     margin-bottom: 20px;
-    text-align: center;
+    text-align: left;
     background-color: #f9f9f9;
     padding: 20px;
     border-radius: 10px;
