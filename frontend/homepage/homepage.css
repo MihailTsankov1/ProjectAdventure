@@ -1,4 +1,5 @@
-/* #04AA6D */
+/* Flexible and Responsive CSS */
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Luckiest+Guy&display=swap');
 
 * {
   margin: 0;
@@ -27,7 +28,7 @@ body {
   align-items: center;
   background-color: rgba(32, 32, 32, 0.7);
   backdrop-filter: blur(10px);
-  padding: 1rem 2rem;
+  padding: 0.5rem 1%;
   color: white;
   position: fixed;
   width: 100%;
@@ -54,19 +55,26 @@ body {
   text-decoration: none;
   color: white;
   transition: color 0.3s ease;
+  font-family: "Bodoni Moda", serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
 }
 
-.nav-links a:hover {
-  color: #04AA6D;
+.playnowbtn {
+  padding: 0.5rem 1rem;
+  background-color: #4b099683;
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  border-radius: 0.625rem;
+  transition: background 0.3s;
+  font-family: "Luckiest Guy", serif;
+  font-weight: 400;
+  font-style: normal;
+  will-change: transform;
+  transition: transform .15s ease, background .15s ease;
 }
-
-.nav-links a.active {
-  color: #781ae4; 
-  font-weight: bold; 
-  border-bottom: 2px solid #781ae4; 
-  padding-bottom: 5px; 
-}
-
 
 /* Hero Section */
 .hero {
@@ -97,22 +105,22 @@ body {
 }
 
 .hero-content h1 {
-  font-size: 3rem;
-  margin-bottom: 20px;
+  font-size: 2.5rem;
+  margin-bottom: 1.25rem;
 }
 
 .hero-content p {
-  font-size: 1.5rem;
-  margin-bottom: 30px;
+  font-size: 1.25rem;
+  margin-bottom: 1.875rem;
 }
 
 .cta-button {
-  padding: 10px 20px;
+  padding: 0.625rem 1.25rem;
   background-color: #4b0996ee;
   color: white;
   text-decoration: none;
-  font-size: 1.2rem;
-  border-radius: 5px;
+  font-size: 1rem;
+  border-radius: 0.3125rem;
   transition: background 0.3s;
 }
 
@@ -120,46 +128,93 @@ body {
   background-color: #333;
 }
 
-/* Teaser Section */
+.fade {
+  z-index: 30;
+  object-fit: cover;
+  width: 100%;
+  height: 30%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(to top, rgba(51, 51, 51, 1) 0%, rgba(51, 51, 51, 0.738) 19%,
+    rgba(51, 51, 51, 0.541) 34%, rgba(51, 51, 51, 0.382) 47%, rgba(51, 51, 51, 0.278) 56.5%,
+    rgba(51, 51, 51, 0.194) 65%, rgba(51, 51, 51, 0.126) 73%, rgba(51, 51, 51, 0.075) 80.2%,
+    rgba(51, 51, 51, 0.042) 86.1%, rgba(51, 51, 51, 0.021) 91%, rgba(51, 51, 51, 0.008) 95.2%,
+    rgba(51, 51, 51, 0.002) 98.2%, transparent 100%);
+}
 
-.container-whole{
-  --width: 63.75rem;
-  display: block;
-} 
+/* Teaser Section */
+.container-whole {
+  --width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
 
 .container-padding {
   box-sizing: border-box;
   margin: 0 auto;
   max-width: var(--width);
-  overflow: visible;
-  padding: 0 2rem;
+  padding: 2.5rem 15%;
 } 
 
-.teasers-teaser{
-display: flex;
-padding: 2rem 0;
-flex: 1 1;
-border-bottom: .0625rem solid hsla(0, 0%, 100%, .4);
-justify-content: space-between;
+.teasers-teaser {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem 0;
+  border-bottom: 1px solid hsla(0, 0%, 100%, 0.4);
 }
 
-.teasers-teasertext{
-  padding: 3rem;
+.teasers-teaser:last-child {
+  border-bottom: 0;
 }
 
-.teasers-teaserimg{
+.teasers-teasertext {
+  padding: 1rem;
+}
+
+.teasers-teaserimg {
   align-self: center;
   height: auto;
-  max-width: 30rem;
-  min-width: 20rem;
-  width: 50%;
+  max-width: 100%;
+  width: 100%;
 }
 
 section h2 {
-  font-size: 2rem;
+  font-size: 1.5rem;
   margin-bottom: 1rem;
+  padding-bottom: 1rem;
 }
 
 section p {
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+/* Media Queries */
+@media (min-width: 768px) {
+  .hero-content h1 {
+    font-size: 4rem;
+  }
+
+  .hero-content p {
+    font-size: 1.5rem;
+  }
+
+  .container-whole {
+    --width: 80%;
+  }
+
+  .teasers-teaser {
+    flex-direction: row;
+  }
+
+  .teasers-teaserimg {
+    max-width: 40%;
+  }
+
+  .teasers-teasertext {
+    padding: 2rem;
+  }
 }

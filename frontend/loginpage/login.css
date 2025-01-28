@@ -1,81 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Luckiest+Guy&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-    margin: 0;
-    font-family: 'Poppins', sans-serif;
-    background: url('/imgs/img4.png') no-repeat center center/cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    flex-direction: column; 
-    overflow-x: hidden; 
+  font-family: 'Inter', sans-serif;
+  line-height: 1.6;
+  background-color: #333;
+  color: #333;
+  margin: 0;
+  display: flex;
+}
+
+::-webkit-scrollbar {
+  display: none;
+  -ms-overflow-style: none;
+  scrollbar-width: none; 
 }
 
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: rgba(32, 32, 32, 0.7);
-    backdrop-filter: blur(10px);
-    padding: 1rem 2rem;
-    color: white;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1000;
-    box-sizing: border-box; 
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(32, 32, 32, 0.7);
+  backdrop-filter: blur(10px);
+  padding: 0.47rem 1.4rem;
+  color: white;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;  
 }
 
 .navbar .logo a {
-    font-size: 1.5rem;
-    font-weight: bold;
-    text-decoration: none;
-    color: #fff;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: #fff;
 }
 
 .nav-links {
-    display: flex;
-    list-style: none;
-    padding: 0;
-    margin: 0;
+  display: flex;
+  list-style: none;
 }
 
 .nav-links li {
-    margin: 0 1rem;
+  margin: 0 1rem;
 }
 
 .nav-links a {
-    text-decoration: none;
-    color: white;
-    transition: color 0.3s ease;
+  text-decoration: none;
+  color: white;
+  transition: color 0.3s ease;
+  font-family: "Bodoni Moda", serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
 }
 
-.nav-links a:hover {
-    color: #04AA6D;
-}
-
-.nav-links a.active {
-    color: #04AA6D;
-    font-weight: bold;
-    border-bottom: 2px solid #04AA6D;
-    padding-bottom: 5px;
+.playnowbtn{
+  padding: 5px 5px;
+  background-color: #4b099683;
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+  border-radius: 10px;
+  transition: background 0.3s;
+  font-family: "Luckiest Guy", serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .container {
-    position: relative;
+    position: fixed;
     width: 400px;
     background: rgba(255, 255, 255, 0.9);
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
     overflow: hidden;
     margin-top: 60px;
+    margin: 12rem 45rem; /* temp fix */
 }
 
 .form-container {
     display: flex;
     width: 200%;
     transition: transform 0.5s ease-in-out;
+    align-items: center;
 }
 
 .form-box {
@@ -141,7 +154,7 @@ body {
 
 .btn {
     width: 100%;
-    margin-top: 40px;
+    margin-top: 20px;
     margin-bottom: 20px;
     padding: 15px;
     background: #333;
