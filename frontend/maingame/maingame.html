@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mapbox Random Location Picker</title>
+  <link href="https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.css" rel="stylesheet">
+  <link rel="stylesheet" href="maingame.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo"><a href="homepage.html">Adventurine</a></div>
+    <ul class="nav-links">
+        <li><a href="/frontend/adventurespage/adventures.html">Adventures</a></li>
+        <li><a href="/frontend/how2playpage/howtoplay.html">Tutorial</a></li>
+    </ul>
+</nav>
+
+  <!-- Map -->
+  <div id="map" style="height: 500px; width: 100%; margin: 2rem 0;"></div>
+
+  <!-- Controls -->
+  <div id="controls" class="container-padding">
+    <label for="radius">Select Area Radius (km):</label>
+    <select id="radius"></select>
+    <button id="start" disabled>Start</button>
+    <button id="stop" disabled>Stop</button>
+    <p>Timer: <span id="timer">0</span> seconds</p>
+    <p>Distance Walked: <span id="distance">0</span> km</p>
+  </div>
+
+  <script src="https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Turf.js/6.5.0/turf.min.js"></script>
+  <script src="maingame.js"></script>
+</body>
+</html>
