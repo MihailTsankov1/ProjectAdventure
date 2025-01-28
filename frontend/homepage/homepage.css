@@ -10,8 +10,10 @@
 body {
   font-family: 'Inter', sans-serif;
   line-height: 1.6;
-  background-color: #f9f9f9;
-  color: #333;
+  background-color: #333;
+  color: #fff;
+  margin: 0;
+  display: block;
 }
 
 ::-webkit-scrollbar {
@@ -74,20 +76,6 @@ body {
   transition: transform .15s ease, background .15s ease;
 }
 
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-.nav-links a.active {
-  color: #04AA6D; 
-  font-weight: bold; 
-  border-bottom: 2px solid #04AA6D; 
-  padding-bottom: 5px; 
-}
-
-
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
 /* Hero Section */
 .hero {
   position: relative;
@@ -127,16 +115,8 @@ body {
 }
 
 .cta-button {
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-  padding: 10px 20px;
-  background-color: #04AA6D;
-=======
-=======
->>>>>>> Stashed changes
   padding: 0.625rem 1.25rem;
   background-color: #4b0996ee;
->>>>>>> Stashed changes
   color: white;
   text-decoration: none;
   font-size: 1rem;
@@ -145,123 +125,9 @@ body {
 }
 
 .cta-button:hover {
-  background-color: #037A50;
+  background-color: #333;
 }
 
-<<<<<<< Updated upstream
-/* Updates and News Section */
-.updates-news {
-  padding: 50px;
-  background-color: #fff;
-  text-align: center;
-}
-
-.updates-news h2 {
-  font-size: 2.5rem;
-  margin-bottom: 20px;
-}
-
-.update-item {
-  margin: 20px 0;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  border: 40px;
-}
-
-.update-item h3 {
-  font-size: 1.5rem;
-  color: #04AA6D;
-  margin-bottom: 10px;
-}
-
-.update-item p {
-  font-size: 1rem;
-  color: #666;
-}
-
-/* Showcase Section */
-.showcase {
-  padding: 80px;
-  background-color: #f3f3f3;
-  text-align: center;
-}
-
-.showcase h2 {
-  font-size: 2.5rem;
-  margin-bottom: 30px;
-}
-
-.showcase-container {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 20px;
-  margin-top: 20px;
-}
-
-.showcase-item {
-  background: #fff;
-  border-radius: 10px;
-  overflow: hidden;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  flex: 1;
-  min-width: 300px;
-  max-width: 300px;
-}
-
-.showcase-item img {
-  width: 100%;
-  height: auto;
-  pointer-events: none;
-}
-
-.showcase-item h3 {
-  padding: 15px;
-  font-size: 1.2rem;
-  background-color: #04AA6D;
-  color: white;
-  text-align: center;
-}
-
-/* Adventure Highlights Section */
-.adventure-showcase {
-  padding: 40px;
-  background-color: #fff;
-  text-align: center;
-}
-
-.adventure-showcase h2 {
-  font-size: 2.5rem;
-  margin-bottom: 30px;
-}
-
-.adventure-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 20px;
-  margin-top: 20px;
-}
-
-.adventure-item img,
-.adventure-item video {
-  width: 100%;
-  border-radius: 10px;
-}
-
-.view-all-button {
-  display: inline-block;
-  margin-top: 30px;
-  padding: 10px 20px;
-  background-color: #04AA6D;
-  color: white;
-  text-decoration: none;
-  font-size: 1rem;
-  border-radius: 0.3125rem;
-  transition: background 0.3s;
-}
-
-.view-all-button:hover {
-  background-color: #037A50;
-=======
 .fade {
   z-index: 30;
   object-fit: cover;
@@ -277,24 +143,6 @@ body {
     rgba(51, 51, 51, 0.002) 98.2%, transparent 100%);
 }
 
-<<<<<<< Updated upstream
-=======
-.fade {
-  z-index: 30;
-  object-fit: cover;
-  width: 100%;
-  height: 30%;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  background: linear-gradient(to top, rgba(51, 51, 51, 1) 0%, rgba(51, 51, 51, 0.738) 19%,
-    rgba(51, 51, 51, 0.541) 34%, rgba(51, 51, 51, 0.382) 47%, rgba(51, 51, 51, 0.278) 56.5%,
-    rgba(51, 51, 51, 0.194) 65%, rgba(51, 51, 51, 0.126) 73%, rgba(51, 51, 51, 0.075) 80.2%,
-    rgba(51, 51, 51, 0.042) 86.1%, rgba(51, 51, 51, 0.021) 91%, rgba(51, 51, 51, 0.008) 95.2%,
-    rgba(51, 51, 51, 0.002) 98.2%, transparent 100%);
-}
-
->>>>>>> Stashed changes
 /* Teaser Section */
 .container-whole {
   --width: 90%;
@@ -369,8 +217,4 @@ section p {
   .teasers-teasertext {
     padding: 2rem;
   }
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
 }
